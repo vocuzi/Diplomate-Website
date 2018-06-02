@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="Title" content="Diplomate - BTE Previous Year Question Papers">
+		<meta name="Keywords" content="diplomate,diploma,bte,question,papers,previous,year,ce,it,">
+		<meta name="Description" content="Diplomate provides previous year question and sample papers for Diploma students. Currently serving Delhi region only.">
+		<meta name="Subject" content="Educational Resources">
+		<meta name="Language" content="English">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Upload | DiploMate</title>
+		<meta name="theme-color" content="#212121" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<script>
+			  (adsbygoogle = window.adsbygoogle || []).push({
+			    google_ad_client: "ca-pub-6730117326160098",
+			    enable_page_level_ads: true
+			  });
+			</script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119892463-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-119892463-1');
+	</script>
+		<style>
+/*            .suf:nth-child() #box {background: black !important;}*/
+            body {margin: 0; font-family: 'Open Sans';}
+            #header {text-align: center;}
+            #header a {text-decoration: none; color: black;}
+            #header > h1 {font-weight: lighter; margin-bottom: 0px;}
+            #container {}
+            #sub-container {max-width: 900px; margin-left: auto; margin-right: auto;}
+
+            #row {display: block; text-align: center;}
+            #row h2 {font-size: 2em; font-weight: normal;}
+            #row #box {display: inline-block; color: white; text-decoration: none; width: 220px; margin: 10px; border-radius: 4px;}
+            #row #sub-box {padding: 20px;}
+            #row #box .suf {font-size: 2em;}
+            .bitbucket {background: #25292e;}
+            .donate {background: #b92b27;}
+            .upload {background: #3E2723; transform: scale(1.1)}
+            #footer {background: #212121; margin-top: 2em;}
+            #sub-footer {padding: 20px; text-align: center;}
+            #sub-footer #row {color: white; display: inline-block; padding: 5px 0px;}
+            #sub-footer #row.credits h2{margin: 0px;}
+            #sub-footer #row a {text-decoration: underline; color: white; font-size: .8em; margin: 2px;}
+            @media screen and (max-width: 420px) {
+                #container {margin-top: 2em;}
+                #row h2 {font-size: 1.8em;}
+            }
+            #col {display: inline-block; margin: 0px 15px;}
+            #col- { margin: 0px 15px;}
+            input[type="file"] {font-size: 1.2em; margin-top: 20px; font-family: 'Open Sans'; max-width: 95%;}
+            label {}
+            select {font-size: 1.2em; padding: 3px 5px; outline: none; font-family: 'Open Sans';}
+            textarea {font-family: 'Open Sans'; font-size: 1em; max-width: 95%; width: 360px; border: 2px solid #d2d2d2; height: 150px; margin-top: 15px; padding: 5px; outline: none; resize: none;}
+            button {width: 360px; max-width: 90%; outline: none; border: none; padding: 10px; font-size: 1.2em; font-family: 'Open Sans'; background: #212121; color: white; border-radius: 3px;}
+        </style>
+	</head>
+	<body>
+		<div id="body">
+			<div id="header">
+					<h1>
+							<a href="https://diplomate.greybits.in/">Diplo<b>mate</b></a>
+					</h1>
+					<small>Resources within Reach</small>
+			</div>
+          <div id="container">
+                <div id="sub-container">
+                    <div id="row">
+                        <h2>Upload a question paper</h2>
+                    </div>
+                    <div id="row">
+                        <form id="upload-form" action="/upload/" method="post" enctype="multipart/form-data">
+														{% csrf_token %}
+														<div id="col">
+                                <span>Subject : </span>
+                                <select name="branch">
+                                    <option>CE</option>
+                                    <option>IT</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div id="col">
+                                <span>Semester : </span>
+                                <select name="semester">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                            <div id="col-">
+                                <input type="file"/ name="document">
+                                <br>
+                                <textarea placeholder="Description" name="description"></textarea>
+                            </div>
+                            <button type="submit">Contribute</button>
+                        </form>
+                    </div>
+                    <div id="row"><br>
+                        <small>P.S. Spamming or trying to inject JavaScript here can get you blocked.</small>
+                    </div>
+                </div>
+            </div>
+						<div id="footer">
+		            <div id="sub-footer">
+		                <div id="row" class="credits">
+		                    <small>Project by</small>
+		                    <h2><a href="https://www.greybits.in/">GreyBits</a></h2>
+		                </div><br>
+		                <div id="row">
+		                    <a href="https://diplomate.greybits.in/">Home</a>
+		                    <a href="https://diplomate.greybits.in/contribute/">Contribute</a>
+		                    <a href="https://www.greybits.in/contact/">Contact</a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>

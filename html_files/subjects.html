@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		    <meta name="Title" content="Diplomate - BTE Previous Year Question Papers">
+		    <meta name="Keywords" content="diplomate,diploma,bte,question,papers,previous,year,ce,it,">
+		    <meta name="Description" content="Diplomate provides previous year question and sample papers for Diploma students. Currently serving Delhi region only.">
+		    <meta name="Subject" content="Educational Resources">
+		    <meta name="Language" content="English">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="theme-color" content="#212121" />
+        <title>Sem {{ sem }} - {{ branch }} | DiploMate</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<script>
+				  (adsbygoogle = window.adsbygoogle || []).push({
+				    google_ad_client: "ca-pub-6730117326160098",
+				    enable_page_level_ads: true
+				  });
+				</script>
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119892463-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119892463-1');
+</script>
+		    <style>
+            body {margin: 0; font-family: 'Open Sans';}
+            #header {text-align: center;}
+            #header a {text-decoration: none; color: black;}
+            #header > h1 {font-weight: lighter; margin-bottom: 0px;}
+            #container {}
+            #sub-container {max-width: 900px; margin-left: auto; margin-right: auto;}
+            #sub-container #row {}
+            #sub-container #row.pre {}
+            #sub-container #row.suf {}
+            #sub-container #row h2 {font-weight: normal; font-size: 1.1em; margin-left: 10px;}
+            #sub-container #row.ce #box {font-weight: normal; font-size: 1.1em; background: #009688;}
+            #sub-container #row.it #box {font-weight: normal; font-size: 1.1em; background: #795548;}
+            #sub-container #row #box {display: inline-block; width: 130px; margin: 5px; text-decoration: none; border-radius: 3px;}
+            #sub-container #row #box:hover #sub-box {background: rgba(0,0,0,0.3);}
+            #sub-container #row #sub-box {padding: 20px; transition: .3s all;}
+            #sub-container #row #sub-box p {margin: 0; color: white; text-align: center;}
+            #sub-container #row #sub-box .suf {font-size: 2em; font-weight: bold;}
+            #sub-container #row.disclaimer {font-size: .8em;}
+            #sub-container #row #sub-modal h2 {margin: 0px 0px 5px 0px; font-weight: bold;}
+            #sub-container #row #sub-modal p {margin-top: 0px;}
+            #footer {background: #212121;}
+            #sub-footer {padding: 20px; text-align: center;}
+            #sub-footer #row {color: white; display: inline-block; padding: 5px 0px;}
+            #sub-footer #row.credits h2{margin: 0px;}
+            #sub-footer #row a {text-decoration: underline; color: white; font-size: .8em; margin: 2px;}
+            @media screen and (max-width: 420px) {
+                #container {margin-top: 2em;}
+                #sub-container #row.pre {text-align: left;}
+                #sub-container #row.suf {max-width: 300px; text-align: left; margin-left: auto; margin-right: auto;}
+                #sub-container #row h2 {margin-bottom: 5px; margin-left: 20px;}
+                #sub-container #row.modal {margin: 0px 5px;}
+            }
+        </style>
+	</head>
+	<body>
+		<div id="body">
+      <div id="header">
+          <h1>
+              <a href="https://diplomate.greybits.in/">Diplo<b>mate</b></a>
+          </h1>
+          <small>Resources within Reach</small>
+      </div>
+            <div id="container">
+                <div id="sub-container">
+                    {% for subject in subjects %}
+                    <div id="row" class="pre"><h2 class="subject-name">{{ item.name }}</h2></div>
+                    <div id="row" class="suf ce">
+                        {% for item in subject %}
+                        <a href="https://diplomate.greybits.in/static/{{item.hash.filename}}" id="box">
+                            <div id="sub-box">
+                                <p class="suf">{{ item.year }}</p>
+                            </div>
+                        </a>{% endfor %}
+												<a href="https://diplomate.greybits.in/upload/" id="box">
+                            <div id="sub-box">
+                                <p class="suf">+</p>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    {% endfor %}
+                    <div id="row" class="modal">
+                        <div id="sub-modal">
+                            <h2>Looking for more ?</h2>
+                            <p>For now Diplomate cannot offer more . Diplomate is made by contributions of people like you,
+to see more papers shining here, upload the relative question papers or documents <a href="https://diplomate.greybits.in/upload/">here</a>.<br> Call +91 <a href="tel:9643856503">9643856503</a> or <a href="tel:9818593192">9818593192</a> for furthur queries.</p>
+                        </div>
+                    </div>
+                    <div id="row" class="modal disclaimer">
+                        <div id="sub-modal">
+                            <p><b>Disclaimer : </b>Diplomate do not own any of the content provided here. The actual source of question papers is BTE(Board of Technical Education) and is uploaded here by students across India.</p>
+                        </div>
+                    </div>
+                    <div id="row" class="modal">
+                        <div id="sub-modal">
+                            <small><b>About : </b>Diplomate is an open-source non profit project started by students at Ambedkar Institute of Technology in 2016. The goal was to simplify the circulation of  resourceful material for examinations.</small>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+            <div id="footer">
+		            <div id="sub-footer">
+		                <div id="row" class="credits">
+		                    <small>Project by</small>
+		                    <h2><a href="https://www.greybits.in/">GreyBits</a></h2>
+		                </div><br>
+		                <div id="row">
+		                    <a href="https://diplomate.greybits.in/">Home</a>
+		                    <a href="https://diplomate.greybits.in/contribute/">Contribute</a>
+		                    <a href="https://www.greybits.in/contact/">Contact</a>
+		                </div>
+		            </div>
+		        </div>
+		</div>
+    <script>
+    var subjects = [{% for item in names %}"{{ item.name }}",{% endfor %}]
+    var items = document.getElementsByClassName("subject-name")
+    for (i=0; i<items.length; i++) {
+      items[i].innerHTML = subjects[i];
+    }
+    </script>
+	</body>
+</html>
