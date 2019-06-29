@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<meta name="theme-color" content="rgb(0,0,0)" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	    <!-- critical css -->
+	    <style type="text/css">
+	    	body {margin: 0; font-family: 'Open Sans'; transition: .2s all;  color: #212121;}
+			section.header-masthead {background-color: #000000; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); color: white;}
+			section.header-masthead > div {background-color: rgba(0,0,0,0.6);}
+			header {}
+			#header {text-align: center;}
+			#header > * {display: inline-block; padding: 20px 10px;}
+			#logo-container > div {display: block;}
+			#logo {font-size: 30px;}
+			#tagline {font-size: 14px;}
+
+			
+
+			section.navigation {}
+			nav {text-align: center;}
+			nav h3 {margin: 2em auto 0px auto; font-weight: normal; font-size: 1.3em;}
+			nav a {display: inline-block; text-align: center; text-decoration: underline;width: 130px;  text-decoration-style: dotted; color: black; font-size: 1em; margin: 1em; border-radius: 5px; padding: 5px;}
+			nav a div:first-child {height: 60px; width: 60px; background-size: contain; display: inline-block;}
+			nav a:hover {background-color: rgba(0,0,0,0.09);}
+	    </style>
+
+		<style>
+			footer {background-color: #0f0f0f; color: white; font-size: .8em; text-align: center; margin-top: 3em;}
+			footer a {display: inline-block; clear: both; color: white; text-decoration: none; font-size: 1.7em; font-weight: normal;}
+			footer a small {font-size: .5em; display: block;}
+			footer > div {padding: 40px 20px;}
+			
+			section.branch--page {max-width: 1080px; margin: 0 auto;}
+			section.branch--page > div {padding: 5px;}
+			section.branch--page h2 {font-size: 1.5em; font-weight: normal; text-align: center; margin-top: 0px; padding: 0 20px;}
+			section.branch--page h3 {font-size: 1.2em; margin-left: 10px; margin-bottom: 0px;}
+			section.branch--page span {text-align: center; display: block; margin-top: 1.6em;}
+			div.semester {padding-top: 10px;}
+			div.semester--subjects {text-align: center;}
+			a.subject {text-align: left; margin: 5px; border-radius: 5px; font-size: 1.16em;}
+			a.subject > div {padding: 20px; display: table-cell; vertical-align: middle;}
+			div.semester--subjects a.subject { display: block; text-decoration: none; background-color: #009688; color: white;}
+
+			div.subject--paper {text-align: center; padding-top: 10px;}
+			div.subject--paper a.paper {background-color: #8F1D21; color: white;}
+			div.subject--notes a.subject { display: block; text-decoration: none; background-color: #044F67; color: white;}
+			div.subject--files a.subject { display: block; text-decoration: none; background-color: #5B3256; color: white;}
+			a.paper {margin: 2px; border-radius: 5px; font-size: 1.5em; font-weight: bold; display: inline-block; text-decoration: none;}
+			a.paper > div {padding: 20px; display: table-cell; vertical-align: middle; width: 80px; height: 40px;}
+
+
+			section.report-error {border: 1px solid rgba(0,0,0,0.2); border-radius: 5px; margin: 0 auto; margin-top: 1.6em; background-color: rgba(0,0,0,0.06); width: 90vw; max-width: 640px;}
+			section.report-error h3 {margin: 10px 0px 0px 0px; font-size: 1.1em; }
+			section.report-error > div {padding: 10px;}
+
+
+
+			@media only screen and (min-width: 768px) {
+				a.subject {max-width: 280px; display: inline-block;}
+				a.subject > div {height: 50px;}
+				div.subject--paper {text-align: left;}
+				section.report-error {}
+			}
+
+		</style>
+	</head>
+	<body>
+		<section class="header-masthead">
+			<div>
+				<header>
+					<div id="header">
+						<div id="logo-container">
+							<div id="logo">Diplo<b>mate</b></div>
+							<div id="tagline">Resources within Reach</div>
+						</div>
+					</div>
+				</header>
+			</div>
+		</section>
+		<section class="branch--page">
+			<div>
+				<span>Results for :</span>
+				<h2>Applied Mathematics Volume 2</h2>
+				<div id="branch--masthead">
+					<div class="semester">
+						<h3>Previous Year Question Papers :</h3>
+						<div class="subject--paper">
+							<a href="" class="paper">
+								<div>2019</div>
+							</a>
+							<a href="" class="paper">
+								<div>2018</div>
+							</a>
+							<a href="" class="paper">
+								<div>2017</div>
+							</a>
+							<a href="" class="paper">
+								<div>2016</div>
+							</a>
+							<a href="" class="paper">
+								<div>2015</div>
+							</a>
+							<a href="" class="paper">
+								<div>+</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<div id="branch--masthead">
+					<div class="semester">
+						<h3>Study Notes : </h3>
+						<div class="subject--notes">
+							<a class="subject">
+								<div>Applied Mathematics Volume 2</div>
+							</a>
+							<a class="subject">
+								<div>Applied Physics</div>
+							</a>
+							<a class="subject">
+								<div>Basic Electronics</div>
+							</a>
+							<a class="subject">
+								<div>Electrical Engineering</div>
+							</a>
+							<a class="subject">
+								<div>Programming in C</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<div id="branch--masthead">
+					<div class="semester">
+						<h3>Practical Files : </h3>
+						<div class="subject--files">
+							<a class="subject">
+								<div>Applied Mathematics Volume 2</div>
+							</a>
+							<a class="subject">
+								<div>Applied Physics</div>
+							</a>
+							<a class="subject">
+								<div>Basic Electronics</div>
+							</a>
+							<a class="subject">
+								<div>Electrical Engineering</div>
+							</a>
+							<a class="subject">
+								<div>Programming in C</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="report-error">
+			<div>
+				<h3>Find an error or bug?</h3>
+				<p>Report it on <a href="whatsapp">Whatsapp</a> or mail us at <a href="">greybits@protonmail.com</a>. Don't forget to include page's URL in the message.</p>
+			</div>
+		</section>
+		<footer>
+			<div>
+				An Open-source project by<br><a href="https://www.greybits.in/" rel="nofollow">GreyBits<small>#smartEnough</small></a>
+			</div>
+		</footer>
+	</body>
+</html>
